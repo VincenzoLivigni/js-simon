@@ -11,3 +11,19 @@ Dividete in piccoli problemi la consegna.
 Individuate gli elementi di cui avete bisogno per realizzare il programma.
 Immaginate la logica come fosse uno snack: "Dati 2 array di numeri, indica quali e quanti numeri ci sono in comune tra i due array"
 */
+
+
+// Visualizzare in pagina 5 numeri casuali (Math.random)
+
+// Seleziono i paragrafi per salvare i numeri
+const numeri_casuali = [
+  document.getElementById("numero1"),
+  document.getElementById("numero2"),
+  document.getElementById("numero3"),
+  document.getElementById("numero4"),
+  document.getElementById("numero5")
+];
+
+// creo un array vuoto per salvare i numeri randomici
+
+// ciclo for 
