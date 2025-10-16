@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Gioco di memoria</h1>
@@ -11,10 +12,10 @@
             Hai a disposizione 30 secondi per memorizzare questi 5 numeri</p>
 
         <!-- timer -->
-        <p class="timer" style="color: red; font-size: 2.5rem;">Timer:</p>
+        <p class="timer" id="countdown">Timer:</p>
 
         <!-- creo div per poter selezionare tutto il contenuto al suo interno e farlo scomparire -->
-        <div id="numeri">
+        <div class="numbers-list" id="numeri">
             <p id="numero1"></p>
             <p id="numero2"></p>
             <p id="numero3"></p>

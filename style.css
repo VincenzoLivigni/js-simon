@@ -1,0 +1,18 @@
+/* Generics */
+
+/* # COUNTDOWN */
+
+#countdown {
+	font-weight: bolder;
+	font-size: 3rem;
+	color: red;
+}
+
+/* #NUMBERS */
+.numbers-list {
+	font-size: 1.5rem;
+}
+
+#inputs {
+	width: 80px !important;
+}

@@ -44,14 +44,19 @@ for (let i = 0; i < 5; i++) {
 
 // inserisco timer, numeri e input in pagina
 const timerEl = document.querySelector(".timer");
+
 const contenitoreNumeri = document.getElementById("numeri");
+console.log(contenitoreNumeri);
+
 const contenitoreInput = document.getElementById("inputs");
+console.log(contenitoreInput);
+
 
 let tempo = 5;
 
 console.log(timerEl);
 console.log(tempo);
-// console.log(tempo);
+
 
 // estraggo il 30 in pagina dentro il timerEl
 timerEl.innerHTML = tempo;
@@ -81,18 +86,34 @@ tempo--;
 
 // seleziono il pulsante e il paragrafo del risultato
 const risultatoEl = document.getElementById("risultato");
+console.log(risultatoEl);
+
 const numeriIndovinati = document.getElementById("numeri_indovinati");
+console.log(numeriIndovinati);
 
 // seleziono gli input
-const inputEl = contenitoreInput.querySelectorAll("input")
+const inputSingolo = contenitoreInput.querySelectorAll("input")
+console.log(inputSingolo);
 
 // evento clic del bottone
+    risultatoEl.addEventListener("click", () => {
 
-// prendo i numeri inseriti dall'utente
-// pusho i numeri in un array vuoto
+    // creo array vuoto per salvare i numeri inseriti dall'utente
+    const numeri_inseriti = [];
 
-// creo un array per i numeri corretti indovinati
-// li confronto 
+    for (let i = 0; i < inputSingolo.length; i++) {
+    // pusho i numeri in un array vuoto
+    numeri_inseriti.push(Number(inputSingolo[i].value));
+}
+    console.log(numeri_inseriti);
 
-// Mostro il risultato finale
+    // confronto numeri inseriti con quelli iniziali 
+
+    // se i numeri coincidono
+
+    // salvo i numeri che coincidono
+
+    // Mostro il risultato finale
+
+})
 
