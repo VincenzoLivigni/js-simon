@@ -25,5 +25,19 @@ const numeri_casuali = [
 ];
 
 // creo un array vuoto per salvare i numeri randomici
+const salva_numeri = [];
+// console.log(salva_numeri);
+
 
 // ciclo for 
+for (i = 0; i < 5; i++) {
+
+    // genero numeri random
+    let random = Math.floor(Math.random() * 20) +1;
+    // rendo visibili in pagina i numeri random
+    numeri_casuali[i].textContent = random;
+    // salvo i numeri nella variabile vuota
+    salva_numeri.push(random);
+    
+    // console.log(salva_numeri);
+}
