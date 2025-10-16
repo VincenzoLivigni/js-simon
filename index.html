@@ -13,7 +13,7 @@
         <!-- timer -->
         <p class="timer" style="color: red; font-size: 2.5rem;">Timer:</p>
 
-        <!-- creo div per poter selezionare tutto il contenuto al suo interno -->
+        <!-- creo div per poter selezionare tutto il contenuto al suo interno e farlo scomparire -->
         <div id="numeri">
             <p id="numero1"></p>
             <p id="numero2"></p>
@@ -22,8 +22,8 @@
             <p id="numero5"></p>
         </div>
 
-        <!-- creo div per poter selezionare tutto il contenuto al suo interno -->
-        <div id="input" style="display: none;">
+        <!-- creo div per poter selezionare tutto il contenuto al suo interno e farlo comparire -->
+        <div id="inputs" style="display: none;">
             <input type="number"
                 placeholder="Inserisci uno dei numeri comparsi prima">
             <input type="number"
@@ -34,7 +34,11 @@
                 placeholder="Inserisci uno dei numeri comparsi prima">
             <input type="number"
                 placeholder="Inserisci uno dei numeri comparsi prima">
+            <!-- bottone per il risultato finale -->
+            <button id="risultato">Risultato</button>
         </div>
+
+        <p id="numeri_indovinati">Numeri indovinati: </p>
 
         <script src="script.js">
         </script>

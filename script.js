@@ -45,7 +45,7 @@ for (let i = 0; i < 5; i++) {
 // inserisco timer, numeri e input in pagina
 const timerEl = document.querySelector(".timer");
 const contenitoreNumeri = document.getElementById("numeri");
-const contenitoreInput = document.getElementById("input");
+const contenitoreInput = document.getElementById("inputs");
 
 let tempo = 5;
 
@@ -78,3 +78,21 @@ if (tempo === 0) {
 tempo--;
 
 }, 1000)
+
+// seleziono il pulsante e il paragrafo del risultato
+const risultatoEl = document.getElementById("risultato");
+const numeriIndovinati = document.getElementById("numeri_indovinati");
+
+// seleziono gli input
+const inputEl = contenitoreInput.querySelectorAll("input")
+
+// evento clic del bottone
+
+// prendo i numeri inseriti dall'utente
+// pusho i numeri in un array vuoto
+
+// creo un array per i numeri corretti indovinati
+// li confronto 
+
+// Mostro il risultato finale
+
