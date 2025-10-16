@@ -30,7 +30,7 @@ const salva_numeri = [];
 
 
 // ciclo for 
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
 
     // genero numeri random
     let random = Math.floor(Math.random() * 20) +1;
@@ -42,16 +42,19 @@ for (i = 0; i < 5; i++) {
     // console.log(salva_numeri);
 }
 
-// inserisco timer in pagina
+// inserisco timer, numeri e input in pagina
 const timerEl = document.querySelector(".timer");
-let tempo = 30;
+const contenitoreNumeri = document.getElementById("numeri");
+const contenitoreInput = document.getElementById("input");
+
+let tempo = 5;
 
 console.log(timerEl);
 console.log(tempo);
 // console.log(tempo);
 
 // estraggo il 30 in pagina dentro il timerEl
-timerEl.innerHTML = tempo--;
+timerEl.innerHTML = tempo;
 
 // avvio l'intervallo che deve scorrere da 30 a 0s
 let clock = setInterval(() => {
@@ -63,6 +66,7 @@ if (tempo === 0) {
     console.log("ferma il counter");
     // stampo "Il gioco ha inizio"
     timerEl.innerHTML = "Il gioco ha inizio!";
+
     } else {
     timerEl.innerHTML = tempo;
     console.log("mostro il decremento"); 
