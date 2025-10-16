@@ -118,8 +118,9 @@ console.log(inputSingolo);
         }
     }
     console.log(numeri_corretti);
-    
-    // Mostro il risultato finale
 
+    // Mostro il risultato finale
+    numeriIndovinati.textContent = `Hai indovinato ${numeri_corretti.length} numeri su 5!... I numeri che hai ricordato sono: ${numeri_corretti.join(" - ")}`;
+    console.log(numeriIndovinati);
 });
 
