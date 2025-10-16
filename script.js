@@ -38,6 +38,36 @@ for (i = 0; i < 5; i++) {
     numeri_casuali[i].textContent = random;
     // salvo i numeri nella variabile vuota
     salva_numeri.push(random);
-    
+
     // console.log(salva_numeri);
 }
+
+// inserisco timer in pagina
+const timerEl = document.querySelector(".timer");
+let tempo = 30;
+
+console.log(timerEl);
+console.log(tempo);
+// console.log(tempo);
+
+// estraggo il 30 in pagina dentro il timerEl
+timerEl.innerHTML = tempo--;
+
+// avvio l'intervallo che deve scorrere da 30 a 0s
+let clock = setInterval(() => {
+    
+// se la variabile tempo === 0
+if (tempo === 0) {
+    // - interrompo il contatore
+    clearInterval(clock);
+    console.log("ferma il counter");
+    // stampo "Il gioco ha inizio"
+    timerEl.innerHTML = "Il gioco ha inizio!";
+    } else {
+    timerEl.innerHTML = tempo;
+    console.log("mostro il decremento"); 
+}
+
+tempo--;
+
+}, 1000)
