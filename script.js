@@ -26,7 +26,7 @@ const numeri_casuali = [
 
 // creo un array vuoto per salvare i numeri randomici
 const salva_numeri = [];
-// console.log(salva_numeri);
+console.log(salva_numeri);
 
 
 // ciclo for 
@@ -39,7 +39,7 @@ for (let i = 0; i < 5; i++) {
     // salvo i numeri nella variabile vuota
     salva_numeri.push(random);
 
-    // console.log(salva_numeri);
+    console.log(salva_numeri);
 }
 
 // inserisco timer, numeri e input in pagina
@@ -64,9 +64,12 @@ if (tempo === 0) {
     // - interrompo il contatore
     clearInterval(clock);
     console.log("ferma il counter");
-    // stampo "Il gioco ha inizio"
-    timerEl.innerHTML = "Il gioco ha inizio!";
-
+        // stampo "Il gioco ha inizio"
+        timerEl.innerHTML = "Il gioco ha inizio!";
+        // nascondo numeri quando il timer si azzera
+        contenitoreNumeri.style.display = "none";
+        // compaiono gli input quando il timer si azzera
+        contenitoreInput.style.display = "block"; // mostra input
     } else {
     timerEl.innerHTML = tempo;
     console.log("mostro il decremento"); 
