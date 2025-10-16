@@ -108,12 +108,18 @@ console.log(inputSingolo);
     console.log(numeri_inseriti);
 
     // confronto numeri inseriti con quelli iniziali 
+    const numeri_corretti = [];
 
-    // se i numeri coincidono
-
-    // salvo i numeri che coincidono
-
+    for (let i = 0; i < salva_numeri.length; i++) {
+        // se i numeri coincidono
+        if (numeri_inseriti.includes(salva_numeri[i])) {
+            // salvo i numeri che coincidono
+            numeri_corretti.push(Number(salva_numeri[i]));
+        }
+    }
+    console.log(numeri_corretti);
+    
     // Mostro il risultato finale
 
-})
+});
 
